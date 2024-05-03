@@ -1,0 +1,113 @@
+/* Arquivo de estilização*/
+
+/* Inicio da Main */
+#heroSection {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Inicio do header da Main */
+#headMenu {
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 100px;
+}
+
+#headMenu .logoCare {
+    font-family: Arial Black, sans-serif;
+    font-size: 26px;
+    color: #FE8400;
+}
+
+#headMenu .menu {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#headMenu .menu .menuItems {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#headMenu .menu .menuItems a {
+    color: #141414;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+#headMenu .menu .menuButton {
+    width: 146px;
+    height: 40px;
+    background-color: #FE8400;
+    padding: 8px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #141414;
+    border-radius: 4px;
+}
+/* Fim do header da Main */
+
+/* Inicio da div socialMenu */
+#socialMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 445px;
+    margin: 72px;
+}
+
+#socialMenu .line {
+    position: relative;
+    left: 50%;
+    width: 3px;
+    height: 50px;
+    background-color: #FE8400;
+}
+
+#socialMenu .redesIcons {
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#socialMenu .redesIcons div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #FE8400;
+    border-radius: 4px;
+    color: #141414;
+}
+
+#socialMenu .redesIcons .facebook {
+    font-size: x-large;
+    align-items: end;
+}
+
+#socialMenu .redesIcons .telegram img {
+    width: 20px;
+}
+/* Fim da div socialMenu */
+
+
+
+
+
+/* #heroSection .rectangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #141414;
+    width: 613px;
+    height: 100vh;
+    z-index: -1;
+} */
