@@ -4,6 +4,8 @@
 #heroSection {
     display: flex;
     flex-wrap: wrap;
+    height: 100vh;
+    margin-bottom: 56px;
 }
 
 /* Inicio do header da Main */
@@ -57,7 +59,7 @@
 }
 /* Fim do header da Main */
 
-/* Inicio da div socialMenu */
+/* Inicio da div socialMenu da Main */
 #socialMenu {
     display: flex;
     flex-direction: column;
@@ -101,9 +103,9 @@
 #socialMenu .redesIcons .telegram img {
     width: 12px;
 }
-/* Fim da div socialMenu */
+/* Fim da div socialMenu da Main */
 
-/* Inicio da div headerText */
+/* Inicio da div headerText da Main */
 #headerText {
     width: 528px;
     height: 445px;
@@ -149,9 +151,9 @@
     font-weight: 400;
     font-size: 24px;
 }
-/* Fim da div headerText */
+/* Fim da div headerText da Main */
 
-/* Inicio da img mainPicture */
+/* Inicio da img mainPicture da Main */
 #heroSection #mainPicture {
     width: 909px;
     height: 545px;
@@ -159,9 +161,9 @@
     top: 104px;
     right: 0px;
 }
-/* Fim da img mainPicture */
+/* Fim da img mainPicture da Main*/
 
-/* Inicio da span com a classe rectangle */
+/* Inicio da span com a classe rectangle da Main */
 #heroSection .rectangle {
     position: absolute;
     top: 0;
@@ -171,4 +173,78 @@
     height: 100%;
     z-index: -1;
 }
-/* Fim da span com a classe rectangle */
+/* Fim da span com a classe rectangle da Main */
+/* Fim da Main */
+
+/* Inicio da section aboutUs */
+#aboutUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+/* Inicio da div aboutTitle */
+#aboutTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#aboutTitle h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: #141414;
+}
+
+#aboutTitle hr{
+    border: 2px solid;
+    border-color: #FE8400;
+}
+/* Fim da div aboutTitle */
+
+/* Inicio da div imageInfo */
+#imageInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    width: 1120px;
+}
+
+#imageInfo img {
+    width: 548px;
+    height: 354px;
+}
+
+#imageInfo .infoAbout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 24px;
+}
+
+#imageInfo .infoAbout p {
+    color: #575757;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#more {
+    display: none;
+}
+
+#buttonExpandRetraiText {
+    background-color: transparent;
+    color: #FE8400;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+/* Fim da div imageInfo */
+/* Fim da section aboutUs */
