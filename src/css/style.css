@@ -10,6 +10,7 @@
 #headMenu {
     width: 100vw;
     height: 40px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,10 +21,11 @@
     font-family: Arial Black, sans-serif;
     font-size: 26px;
     color: #FE8400;
+    margin-left: 155px;
 }
 
 #headMenu .menu {
-    width: 800px;
+    width: 700px;
     display: flex;
     justify-content: space-around;
 }
@@ -64,6 +66,7 @@
     gap: 12px;
     height: 445px;
     margin: 72px;
+    margin-left: calc(72px + 47.5px);
 }
 
 #socialMenu .line {
@@ -104,6 +107,7 @@
 #headerText {
     width: 528px;
     height: 445px;
+    margin-left: 47.5px;
     margin-top: 72px;
     display: flex;
     justify-content: center;
@@ -153,7 +157,7 @@
     height: 545px;
     position: absolute;
     top: 104px;
-    left: 626px;
+    right: 0px;
 }
 /* Fim da img mainPicture */
 
@@ -163,8 +167,8 @@
     top: 0;
     left: 0;
     background-color: #141414;
-    width: 613px;
-    height: 100vh;
+    width: 700px;
+    height: 100%;
     z-index: -1;
 }
 /* Fim da span com a classe rectangle */
