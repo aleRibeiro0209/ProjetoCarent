@@ -23,15 +23,16 @@
 }
 
 #headMenu .menu {
-    width: 50%;
+    width: 800px;
     display: flex;
     justify-content: space-around;
 }
 
 #headMenu .menu .menuItems {
-    width: 70%;
+    width: 497px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    gap: 40px;
     align-items: center;
 }
 
@@ -47,6 +48,7 @@
     background-color: #FE8400;
     padding: 8px;
     font-family: "Poppins", sans-serif;
+    font-weight: 400;
     font-size: 16px;
     color: #141414;
     border-radius: 4px;
@@ -57,21 +59,21 @@
 #socialMenu {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
     height: 445px;
     margin: 72px;
 }
 
 #socialMenu .line {
-    position: relative;
-    left: 50%;
-    width: 3px;
-    height: 50px;
+    width: 1px;
+    height: 38px;
     background-color: #FE8400;
 }
 
 #socialMenu .redesIcons {
-    height: 225px;
+    height: 128px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -81,28 +83,82 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
+    width: 16px;
+    height: 16px;
     background-color: #FE8400;
     border-radius: 4px;
     color: #141414;
 }
 
 #socialMenu .redesIcons .facebook {
-    font-size: x-large;
+    font-size: small;
     align-items: end;
 }
 
 #socialMenu .redesIcons .telegram img {
-    width: 20px;
+    width: 12px;
 }
 /* Fim da div socialMenu */
 
+/* Inicio da div headerText */
+#headerText {
+    width: 528px;
+    height: 445px;
+    margin-top: 72px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    background-color: rgba(0, 0, 0, 0.15);
+    z-index: 999;
+}
 
+#headerText .title {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 16px;
+}
 
+#headerText .title h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    color: #FFF;
+}
 
+#headerText .title p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.85);
+}
 
-/* #heroSection .rectangle {
+#headerText .exploreButton {
+    width: 256px;
+    height: 60px;
+    background-color: #FE8400;
+    border-radius: 4px;
+    color: #141414;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+/* Fim da div headerText */
+
+/* Inicio da img mainPicture */
+#heroSection #mainPicture {
+    width: 909px;
+    height: 545px;
+    position: absolute;
+    top: 104px;
+    left: 626px;
+}
+/* Fim da img mainPicture */
+
+/* Inicio da span com a classe rectangle */
+#heroSection .rectangle {
     position: absolute;
     top: 0;
     left: 0;
@@ -110,4 +166,5 @@
     width: 613px;
     height: 100vh;
     z-index: -1;
-} */
+}
+/* Fim da span com a classe rectangle */
