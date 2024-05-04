@@ -9,10 +9,12 @@ function readMore(){
         moreText.style.display = "none";
         btnReadMore.innerHTML = "Read More"
         alterImageAlign.style.alignItems = "center"
+        alterImageAlign.style.textAlign = "left"
     } else {
         ponts.style.display = "none";
         moreText.style.display = "inline";
         btnReadMore.innerHTML = "Read Less"
         alterImageAlign.style.alignItems = "start"
+        alterImageAlign.style.textAlign = "justify"
     }
 }

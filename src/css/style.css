@@ -49,13 +49,7 @@
 #headMenu .menu .menuButton {
     width: 146px;
     height: 40px;
-    background-color: #FE8400;
-    padding: 8px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
     font-size: 16px;
-    color: #141414;
-    border-radius: 4px;
 }
 /* Fim do header da Main */
 
@@ -144,11 +138,6 @@
 #headerText .exploreButton {
     width: 256px;
     height: 60px;
-    background-color: #FE8400;
-    border-radius: 4px;
-    color: #141414;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
     font-size: 24px;
 }
 /* Fim da div headerText da Main */
@@ -199,11 +188,6 @@
     font-size: 32px;
     color: #141414;
 }
-
-#aboutTitle hr{
-    border: 2px solid;
-    border-color: #FE8400;
-}
 /* Fim da div aboutTitle */
 
 /* Inicio da div imageInfo */
@@ -248,3 +232,50 @@
 }
 /* Fim da div imageInfo */
 /* Fim da section aboutUs */
+
+/* Inicio da section bookNow */
+#bookNow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+/* Inicio da div com a classe bookTitle */
+#bookNow .bookTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#bookNow .bookTitle h3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: #141414;
+}
+
+/* Inicio do form com a classe bookingForm */
+#bookNow .bookingForm {
+    width: 100vw;
+    height: 298px;
+    background-color: #FFE4C6;
+}
+/* Fim do form com a classe bookingForm */
+
+/* Todos os elementos hr */
+hr{
+    border: 2px solid;
+    border-color: #FE8400;
+}
+
+/* Classe para reutilização de estilos */
+.btnStyle {
+    background-color: #FE8400;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #141414;
+    border-radius: 4px;
+}
