@@ -257,18 +257,204 @@
     color: #141414;
 }
 
-/* Inicio do form com a classe bookingForm */
+/* Inicio da div com a classe bookingForm */
 #bookNow .bookingForm {
-    width: 100vw;
+    width: 100%;
     height: 298px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #FFE4C6;
 }
-/* Fim do form com a classe bookingForm */
+/* Fim da div com a classe bookingForm */
+
+/* Inicio do form com a classe formBook  */
+#bookNow .bookingForm .formBook {
+    width: 1040px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 32px 0px;
+    
+}
+/* Fim do form com a classe formBook  */
+
+/* Inicio Input */
+#bookNow .bookingForm .formBook .inputStyleBig, .Gran{
+    width: 320px;
+}
+
+#bookNow .bookingForm .formBook .inputStyleSmall, .Peq{
+    width: 220px;
+} 
+
+
+#bookNow .bookingForm .formBook .inputStyleBig input, #bookNow .bookingForm .formBook .inputStyleSmall input {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+#bookNow .bookingForm .formBook .inputStyleSmall, #bookNow .bookingForm .formBook .inputStyleBig{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    color: #141414;
+    height: 60px;
+}
+
+.sobPosition {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+    position: absolute;
+}
+
+.sobPosition div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+ 
+}
+
+#buttonBook {
+    width: 256px; 
+    height: 60px;
+    font-size: 24px;
+}
+/* Fim do Input */
+/* Fim do form com a classe formBook  */
+/* Fim da section bookNow */
+
+/* Inicio da section cars */
+#cars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+#cars .carsTitle h3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: #141414;
+}
+
+#cars .carasoulList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+#cars .carasoulList .cardsCars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px 0px;
+}
+
+#cars .carasoulList .cardsCars .card {
+    width: 357px;
+    height: 430px;
+    display: flex;
+    padding: 40px 24px;
+    flex-direction: column;
+    border: 1px solid #C4C4C4;
+    border-radius: 4px;
+    gap: 12px;
+}
+
+#cars .carasoulList .cardsCars .card .dataOfCar {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#cars .carasoulList .cardsCars .card .dataOfCar .nameConfig {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#cars .carasoulList .cardsCars .card .dataOfCar .nameConfig h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#cars .carasoulList .cardsCars .card .nameConfig .infoCar {
+    display: flex;
+    gap: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#cars .carasoulList .cardsCars .card .nameConfig .infoCar .infoCarBasic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+#cars .carasoulList .cardsCars .card .dataOfCar .valorButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #575757;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#cars .carasoulList .cardsCars .card .dataOfCar .valorButton .valor {
+    color: #141414;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#cars .carasoulList .cardsCars .card .dataOfCar .valorButton .btnPageCar{
+    width: 106px;
+    height: 35px;
+    font-size: 14px;
+}
+
+#cars .carasoulList .bullet {
+    width: 64px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+#cars .carasoulList .bullet .circle {
+    width: 16px;
+    height: 16px;
+    background-color: #EAEAEA;
+    border-radius: 50%;
+}
+
+#cars .carasoulList .bullet .circle.select {
+    background-color: #FE8400;
+}
+/* Fim da section cars */
 
 /* Todos os elementos hr */
 hr{
-    border: 2px solid;
-    border-color: #FE8400;
+    border: 2px solid #FE8400;
 }
 
 /* Classe para reutilização de estilos */

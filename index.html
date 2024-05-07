@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="./src/fontawesome/css/all.min.css">
 </head>
 <body>
+    <!-- Inicio main Hero Section -->
     <main id="heroSection">
         <header id="headMenu">
             <h1 class="logoCare">CARENT</h1>
@@ -19,7 +20,7 @@
                     <a href="#heroSection">Home</a>
                     <a href="#aboutUs">About</a>
                     <a href="#bookNow">Booking</a>
-                    <a href="">Cars</a>
+                    <a href="#cars">Cars</a>
                     <a href="">Contacts</a>
                 </div>
                 <button class="menuButton btnStyle">Login | Sign up</button>
@@ -46,6 +47,9 @@
             <img id="mainPicture" src="./src/img/mainPicture.svg" alt="Imagem de uma Mercedes GT Cinza Chumbo com detalhes em amarelo e preto">
         <span class="rectangle"></span>
     </main>
+    <!-- Fim main Hero Section -->
+
+    <!-- Inicio section About Us -->
     <section id="aboutUs">
         <div id="aboutTitle">
             <h3>About Us</h3>
@@ -59,15 +63,131 @@
             </div>
         </div>
     </section>
+    <!-- Fim section About Us -->
+
+    <!-- Inicio section BookNow -->
     <section id="bookNow">
         <div class="bookTitle">
             <h3>Book Now</h3>
             <hr>
         </div>
-        <form class="bookingForm" action="" method="POST">
-            
-        </form>
+        <div class="bookingForm">
+            <form class="formBook" action="" method="POST">
+                <div class="inputStyleBig">
+                    <input class="bigInput" type="text" id="location">
+                    <div class="sobPosition Gran">
+                        <div>
+                            <img src="./src/img/location.svg" alt="Icone de Map Pin">
+                            <label for="location">Pickup Location</label>
+                        </div>
+                        <img id="dropDown" src="./src/img/arrow-down.svg" alt="Seta para baixo para abrir o painel de opções ">
+                    </div>
+                </div>
+                <div class="inputStyleBig">
+                    <input class="bigInput" type="text" id="pickupDate">
+                    <div class="sobPosition Gran">
+                        <div>
+                            <img src="./src/img/calendar.svg" alt="Icone de Map Pin">
+                            <label for="pickupDate">Pickup Date</label>
+                        </div>
+                        <img id="dropDown" src="./src/img/arrow-down.svg" alt="Seta para baixo para abrir o painel de opções ">
+                    </div>
+                </div>
+                <div class="inputStyleBig">
+                    <input class="bigInput" type="text" id="returnDate">
+                    <div class="sobPosition Gran">
+                        <div>
+                            <img src="./src/img/calendar.svg" alt="Icone representando um calendário">
+                            <label for="returnDate">Return Date</label>
+                        </div>
+                        <img id="dropDown" src="./src/img/arrow-down.svg" alt="Seta para baixo para abrir o painel de opções ">
+                    </div>
+                </div>
+                <div class="inputStyleSmall">
+                    <input class="smallInput" type="text" id="carType">
+                    <div class="sobPosition Peq">
+                        <div>
+                            <img src="./src/img/car.svg" alt="Icone representando um carro">
+                            <label for="carType">Car Type</label>
+                        </div>
+                        <img id="dropDown" src="./src/img/arrow-down.svg" alt="Seta para baixo para abrir o painel de opções ">
+                    </div>
+                </div>
+                <div class="inputStyleSmall">
+                    <input class="smallInput" type="text" id="pickupTime">
+                    <div class="sobPosition Peq">
+                        <div>
+                            <img src="./src/img/clock.svg" alt="Icone representando um relógio">
+                            <label for="pickupTime">Pickup Time</label>
+                        </div>
+                        <img id="dropDown" src="./src/img/arrow-down.svg" alt="Seta para baixo para abrir o painel de opções ">
+                    </div>
+                </div>
+                <div class="inputStyleSmall">
+                    <input class="smallInput" type="text" id="returnTime">
+                    <div class="sobPosition Peq">
+                        <div>
+                            <img src="./src/img/clock.svg" alt="Icone representando um relógio">
+                            <label for="returnTime">Return Time</label>
+                        </div>
+                        <img id="dropDown" src="./src/img/arrow-down.svg" alt="Seta para baixo para abrir o painel de opções ">
+                    </div>
+                </div>
+    
+                <input class="btnStyle" id="buttonBook" type="button" value="Book Now">
+            </form>
+
+        </div>
     </section>
-    <script src="./src/js/readMore.js"></script>
+    <!-- Fim section BookNow -->
+
+    <!-- Inicio section Cars -->
+    <section id="cars">
+        <div class="carsTitle">
+            <h3>Our Featured Cars</h3>
+            <hr>
+        </div>
+        <div class="carasoulList">
+            <div class="cardsCars">
+                <div class="card">
+                    <img src="./src/img/carCard3.svg" alt="">
+                    <div class="dataOfCar">
+                        <div class="nameConfig">
+                            <h2>Jeep XD</h2>
+                            <div class="infoCar">
+                                <div class="infoCarBasic">
+                                    <img src="./src/img/user.svg" alt="">
+                                    <p>5</p>
+                                </div>
+                                <div class="infoCarBasic">
+                                    <img src="./src/img/gas-station.svg" alt="">
+                                    <p>Gasoline</p>
+                                </div>
+                                <div class="infoCarBasic">
+                                    <img src="./src/img/carP.svg" alt="">
+                                    <p>SUV</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="valorButton">
+                            <div>
+                                <p>Daily rate from</p>
+                                <p class="valor">$200</p>
+                            </div>
+                            <button class="btnStyle btnPageCar">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bullet">
+                <div class="circle select"></div>
+                <span class="circle"></span>
+                <span class="circle"></span>
+            </div>
+        </div>
+    </section>
+    <!-- Fim section Cars -->
+
+    <script src="./src/js/script.js"></script>
 </body>
 </html>
