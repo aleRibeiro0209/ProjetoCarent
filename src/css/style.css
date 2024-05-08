@@ -145,7 +145,6 @@
 /* Inicio da img mainPicture da Main */
 #heroSection #mainPicture {
     width: 909px;
-    height: 545px;
     position: absolute;
     top: 104px;
     right: 0px;
@@ -159,7 +158,7 @@
     left: 0;
     background-color: #141414;
     width: 700px;
-    height: 100%;
+    height: 100vh;
     z-index: -1;
 }
 /* Fim da span com a classe rectangle da Main */
@@ -351,6 +350,7 @@
 }
 
 #cars .carasoulList {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -358,43 +358,65 @@
     gap: 32px;
 }
 
-#cars .carasoulList .cardsCars {
+#cars .carasoulList .List {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 24px 0px;
 }
 
-#cars .carasoulList .cardsCars .card {
+#cars .carasoulList .List .set-carList {
+    z-index: 999;
+}
+
+#cars .carasoulList .List .cardsCars {
+    width: 75%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0px 24px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+#cars .carasoulList .List .cardsCars .card {
     width: 357px;
     height: 430px;
     display: flex;
-    padding: 40px 24px;
+    justify-content: center;
+    padding: 40px 18px;
     flex-direction: column;
     border: 1px solid #C4C4C4;
     border-radius: 4px;
     gap: 12px;
 }
 
-#cars .carasoulList .cardsCars .card .dataOfCar {
+#cars .carasoulList .List .cardsCars .card .carImg {
+    width: 319.5px;
+    height: 183px;
+    object-fit: cover;
+    border-radius: 3.33px;
+}
+
+#cars .carasoulList .List .cardsCars .card .dataOfCar {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-#cars .carasoulList .cardsCars .card .dataOfCar .nameConfig {
+#cars .carasoulList .List .cardsCars .card .dataOfCar .nameConfig {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-#cars .carasoulList .cardsCars .card .dataOfCar .nameConfig h2 {
+#cars .carasoulList .List .cardsCars .card .dataOfCar .nameConfig h2 {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 18px;
 }
 
-#cars .carasoulList .cardsCars .card .nameConfig .infoCar {
+#cars .carasoulList .List .cardsCars .card .nameConfig .infoCar {
     display: flex;
     gap: 16px;
     font-family: "Poppins", sans-serif;
@@ -402,14 +424,14 @@
     font-size: 16px;
 }
 
-#cars .carasoulList .cardsCars .card .nameConfig .infoCar .infoCarBasic{
+#cars .carasoulList .List .cardsCars .card .nameConfig .infoCar .infoCarBasic{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4px;
 }
 
-#cars .carasoulList .cardsCars .card .dataOfCar .valorButton {
+#cars .carasoulList .List .cardsCars .card .dataOfCar .valorButton {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -419,13 +441,13 @@
     font-size: 16px;
 }
 
-#cars .carasoulList .cardsCars .card .dataOfCar .valorButton .valor {
+#cars .carasoulList .List .cardsCars .card .dataOfCar .valorButton .valor {
     color: #141414;
     font-size: 18px;
     font-weight: 500;
 }
 
-#cars .carasoulList .cardsCars .card .dataOfCar .valorButton .btnPageCar{
+#cars .carasoulList .List .cardsCars .card .dataOfCar .valorButton .btnPageCar{
     width: 106px;
     height: 35px;
     font-size: 14px;
