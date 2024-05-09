@@ -73,68 +73,70 @@
         </div>
         <div class="bookingForm">
             <form class="formBook" action="" method="POST">
-                <div class="inputStyleBig">
-                    <input class="bigInput" type="text" id="location">
-                    <div class="sobPosition Gran">
-                        <div>
-                            <img src="./src/img/location.svg" alt="Icone de Map Pin">
-                            <label for="location">Pickup Location</label>
+                <div class="space">
+                    <div class="inputStyleBig">
+                        <input class="bigInput" type="text" id="location">
+                        <div class="sobPosition Gran">
+                            <div>
+                                <img src="./src/img/location.svg" alt="Icone de Map Pin">
+                                <label for="location">Pickup Location</label>
+                            </div>
+                            <img id="dropDown" src="./src/img/arrow-down.svg" alt="Seta para baixo para abrir o painel de opções ">
                         </div>
-                        <img id="dropDown" src="./src/img/arrow-down.svg" alt="Seta para baixo para abrir o painel de opções ">
                     </div>
-                </div>
-                <div class="inputStyleBig">
-                    <input class="bigInput" type="text" id="pickupDate">
-                    <div class="sobPosition Gran">
-                        <div>
-                            <img src="./src/img/calendar.svg" alt="Icone de Map Pin">
-                            <label for="pickupDate">Pickup Date</label>
+                    <div class="inputStyleBig">
+                        <input class="bigInput" type="text" id="pickupDate">
+                        <div class="sobPosition Gran">
+                            <div>
+                                <img src="./src/img/calendar.svg" alt="Icone de Map Pin">
+                                <label for="pickupDate">Pickup Date</label>
+                            </div>
+                            <img id="dropDown" src="./src/img/arrow-down.svg" alt="Seta para baixo para abrir o painel de opções ">
                         </div>
-                        <img id="dropDown" src="./src/img/arrow-down.svg" alt="Seta para baixo para abrir o painel de opções ">
                     </div>
-                </div>
-                <div class="inputStyleBig">
-                    <input class="bigInput" type="text" id="returnDate">
-                    <div class="sobPosition Gran">
-                        <div>
-                            <img src="./src/img/calendar.svg" alt="Icone representando um calendário">
-                            <label for="returnDate">Return Date</label>
+                    <div class="inputStyleBig">
+                        <input class="bigInput" type="text" id="returnDate">
+                        <div class="sobPosition Gran">
+                            <div>
+                                <img src="./src/img/calendar.svg" alt="Icone representando um calendário">
+                                <label for="returnDate">Return Date</label>
+                            </div>
+                            <img id="dropDown" src="./src/img/arrow-down.svg" alt="Seta para baixo para abrir o painel de opções ">
                         </div>
-                        <img id="dropDown" src="./src/img/arrow-down.svg" alt="Seta para baixo para abrir o painel de opções ">
                     </div>
-                </div>
-                <div class="inputStyleSmall">
-                    <input class="smallInput" type="text" id="carType">
-                    <div class="sobPosition Peq">
-                        <div>
-                            <img src="./src/img/car.svg" alt="Icone representando um carro">
-                            <label for="carType">Car Type</label>
+                    <div class="inputStyleSmall">
+                        <input class="smallInput" type="text" id="carType">
+                        <div class="sobPosition Peq">
+                            <div>
+                                <img src="./src/img/car.svg" alt="Icone representando um carro">
+                                <label for="carType">Car Type</label>
+                            </div>
+                            <img id="dropDown" src="./src/img/arrow-down.svg" alt="Seta para baixo para abrir o painel de opções ">
                         </div>
-                        <img id="dropDown" src="./src/img/arrow-down.svg" alt="Seta para baixo para abrir o painel de opções ">
                     </div>
-                </div>
-                <div class="inputStyleSmall">
-                    <input class="smallInput" type="text" id="pickupTime">
-                    <div class="sobPosition Peq">
-                        <div>
-                            <img src="./src/img/clock.svg" alt="Icone representando um relógio">
-                            <label for="pickupTime">Pickup Time</label>
+                    <div class="inputStyleSmall">
+                        <input class="smallInput" type="text" id="pickupTime">
+                        <div class="sobPosition Peq">
+                            <div>
+                                <img src="./src/img/clock.svg" alt="Icone representando um relógio">
+                                <label for="pickupTime">Pickup Time</label>
+                            </div>
+                            <img id="dropDown" src="./src/img/arrow-down.svg" alt="Seta para baixo para abrir o painel de opções ">
                         </div>
-                        <img id="dropDown" src="./src/img/arrow-down.svg" alt="Seta para baixo para abrir o painel de opções ">
                     </div>
-                </div>
-                <div class="inputStyleSmall">
-                    <input class="smallInput" type="text" id="returnTime">
-                    <div class="sobPosition Peq">
-                        <div>
-                            <img src="./src/img/clock.svg" alt="Icone representando um relógio">
-                            <label for="returnTime">Return Time</label>
+                    <div class="inputStyleSmall">
+                        <input class="smallInput" type="text" id="returnTime">
+                        <div class="sobPosition Peq">
+                            <div>
+                                <img src="./src/img/clock.svg" alt="Icone representando um relógio">
+                                <label for="returnTime">Return Time</label>
+                            </div>
+                            <img id="dropDown" src="./src/img/arrow-down.svg" alt="Seta para baixo para abrir o painel de opções ">
                         </div>
-                        <img id="dropDown" src="./src/img/arrow-down.svg" alt="Seta para baixo para abrir o painel de opções ">
                     </div>
+        
+                    <input class="btnStyle" id="buttonBook" type="button" value="Book Now">
                 </div>
-    
-                <input class="btnStyle" id="buttonBook" type="button" value="Book Now">
             </form>
 
         </div>
@@ -163,6 +165,65 @@
         </div>
     </section>
     <!-- Fim section Cars -->
+    
+    <!-- Inicio da section premiumServices -->
+    <section id="premiumServices">
+        <div class="psTitle">
+            <div>
+                <h3>Our Premium Services</h3>
+                <hr>
+            </div>
+            <p>Carent is a reputable car rental company that offers a wide range of useful services for every taste.</p>
+        </div>
+        <div class="services">
+            <div class="cardServices">
+                <img src="./src/img/refresh-right-square.svg" alt="">
+                <h1>24 Hours Support</h1>
+                <p>We support you all hours of the day.</p>
+            </div>
+            <div class="cardServices">
+                <img src="./src/img/medal-star.svg" alt="">
+                <h1>Qualified Assurance</h1>
+                <p>All cars have a valid insurance. </p>
+            </div>
+            <div class="cardServices">
+                <img src="./src/img/gps.svg" alt="">
+                <h1>GPS on Cars</h1>
+                <p style="width: 12.2rem;">All cars are equipped with GPS navigation system.</p>
+            </div>
+        </div>
+        <span class="rectangle-horizon"></span>
+    </section>
+    <!-- Fim da section premiumServices -->
+
+    <!-- Inicio da section clientSay -->
+    <section id="clientSay">
+        <div class="cliSayTitle">
+            <h3>What Our Clients Say?</h3>
+            <hr>
+        </div>
+        <div class="carrossel">
+            <img src="./src/img/arrow-left.svg" alt="">
+            <div class="clientCards">
+                <div class="cardCli">
+                    <img src="./src/img/cliCard1.svg" alt="Imagem de perfil do usuário">
+                    <div class="nameComent">
+                        <h2>Kristin Watson</h2>
+                        <p>I rented a car for a one-week trip from Carnet on the recommendation of my friend. Actually, I am satisfied with them.</p>
+                    </div>
+                </div>
+                <div class="cardCli">
+                    <img src="./src/img/cliCard2.svg" alt="Imagem de perfil do usuário">
+                    <div class="nameComent">
+                        <h2>Robert Fox</h2>
+                        <p>During my last trip, I used a Carent sport car . The car was completely clean and had enough gas.</p>
+                    </div></div>
+            </div>
+            <img src="./src/img/arrow-right.svg" alt="">
+        </div>
+    </section>
+    <!-- Fim da section clientSay -->
+
 
     <script src="./src/js/script.js"></script>
     <script src="./src/js/main.js"></script>

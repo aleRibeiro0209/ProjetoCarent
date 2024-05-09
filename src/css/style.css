@@ -1,7 +1,15 @@
 /* Arquivo de estilização*/
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Inicio da Main */
 #heroSection {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     height: 100vh;
@@ -10,7 +18,7 @@
 
 /* Inicio do header da Main */
 #headMenu {
-    width: 100vw;
+    width: 100%;
     height: 40px;
     margin-top: 20px;
     display: flex;
@@ -133,6 +141,7 @@
     font-weight: 500;
     font-size: 24px;
     color: rgba(255, 255, 255, 0.85);
+    line-height: 2.5rem;
 }
 
 #headerText .exploreButton {
@@ -157,7 +166,8 @@
     top: 0;
     left: 0;
     background-color: #141414;
-    width: 700px;
+    width: 60%;
+    max-width: 700px;
     height: 100vh;
     z-index: -1;
 }
@@ -166,6 +176,7 @@
 
 /* Inicio da section aboutUs */
 #aboutUs {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -194,13 +205,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 32px;
-    width: 1120px;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1140px;
 }
 
 #imageInfo img {
-    width: 548px;
-    height: 354px;
+    width: 80%;
+    height: auto;
+    max-width: 548px;
+    max-height: 354px;
 }
 
 #imageInfo .infoAbout {
@@ -208,14 +222,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    gap: 24px;
+    width: 80%;
+    max-width: 548px;
+    gap: 1.5rem;
 }
 
 #imageInfo .infoAbout p {
     color: #575757;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
 }
 
 #more {
@@ -234,6 +251,7 @@
 
 /* Inicio da section bookNow */
 #bookNow {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -259,26 +277,32 @@
 /* Inicio da div com a classe bookingForm */
 #bookNow .bookingForm {
     width: 100%;
-    height: 298px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFE4C6;
+    
 }
 /* Fim da div com a classe bookingForm */
 
 /* Inicio do form com a classe formBook  */
 #bookNow .bookingForm .formBook {
-    width: 1040px;
-    height: 60px;
+    width: 100%;
+    padding: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFE4C6;
+}
+/* Fim do form com a classe formBook  */
+
+#bookNow .bookingForm .formBook .space {
+    max-width: 65rem;
     display: flex;
     justify-content: space-between;
     align-content: center;
-    flex-wrap: wrap;
     gap: 32px 0px;
-    
+    flex-wrap: wrap;
 }
-/* Fim do form com a classe formBook  */
 
 /* Inicio Input */
 #bookNow .bookingForm .formBook .inputStyleBig, .Gran{
@@ -334,6 +358,7 @@
 
 /* Inicio da section cars */
 #cars {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -360,9 +385,9 @@
 
 #cars .carasoulList .List {
     width: 100%;
+    max-width: 1500px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
 }
 
 #cars .carasoulList .List .set-carList {
@@ -371,12 +396,15 @@
 
 #cars .carasoulList .List .cardsCars {
     width: 75%;
+    min-width: 357px;
+    max-width: 86.25rem;
     display: flex;
     justify-content: start;
     align-items: center;
-    gap: 0px 24px;
+    gap: 24px;
     overflow-x: auto;
     scrollbar-width: none;
+    scroll-behavior: smooth;
 }
 
 #cars .carasoulList .List .cardsCars .card {
@@ -474,8 +502,183 @@
 }
 /* Fim da section cars */
 
+/* Inicio da section premiumServices */
+#premiumServices {
+    width: 100%;
+    max-width: 58.9375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+#premiumServices .psTitle {
+    margin-top: 2.875rem;
+    width: 80%;
+    max-width: 30.1875rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#premiumServices .psTitle div {
+    width: 100%;
+    max-width: 366px;
+}
+
+#premiumServices .psTitle h3 {
+    margin-bottom: 0.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #FFF;
+}
+
+#premiumServices .psTitle p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 2rem;
+}
+
+#premiumServices .services {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3.5rem;
+}
+
+#premiumServices .services .cardServices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.125rem;
+    width: 17.3125rem;
+    height: 20.125rem;
+    background-color: #FFF;
+    border-radius: 4px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.10);
+}
+
+#premiumServices .services .cardServices img {
+    width: 56px;
+}
+
+#premiumServices .services .cardServices h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.375rem;
+    color: #141414;
+}
+
+#premiumServices .services .cardServices p {
+    width: 9.1875rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    color: #575757;
+    text-align: center;
+}
+
+.rectangle-horizon {
+    width: 100%;
+    height: 24.6875rem;
+    background-color: #141414;
+    position: absolute;
+    z-index: -1;
+}
+/* Fim da section premiumServices */
+
+#clientSay {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+#clientSay .cliSayTitle h3{
+    margin-bottom: 0.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #141414;
+}
+
+#clientSay .carrossel {
+    width: 100%;
+    max-width: 70rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#clientSay .carrossel .clientCards {
+    max-width: 930px;
+    width: 100%;
+    display: flex;
+    gap: 1.5rem;
+}
+
+#clientSay .carrossel .clientCards .cardCli {
+    
+    max-width: 453px;
+    width: 100%;
+    height: 417px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    border: 1px solid #C4C4C4;
+    border-radius: 4px;
+}
+
+#clientSay .carrossel .clientCards .cardCli img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#clientSay .carrossel .clientCards .cardCli .nameComent {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.375rem;
+    text-align: center;
+}
+
+#clientSay .carrossel .clientCards .cardCli .nameComent h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.625rem;
+    font-weight: 500;
+    color: #141414;
+}
+
+#clientSay .carrossel .clientCards .cardCli .nameComent p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #575757;
+}
+
 /* Todos os elementos hr */
-hr{
+hr {
     border: 2px solid #FE8400;
 }
 

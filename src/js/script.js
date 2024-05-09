@@ -102,7 +102,7 @@ cars.forEach(car => {
     i++
 });
 
-// Carrosel
+// Carrossel
 const setaRight = document.getElementById("set-right");
 const setaLeft = document.getElementById("set-left");
 const circleSelec = document.querySelectorAll(".circle");
@@ -120,19 +120,18 @@ setaLeft.addEventListener('click', () => {
     }
 
     circleSelec[bulletCir].classList.remove('select')
-    if (bulletCir <= 0) {
-        bulletCir = 3
-    }
     bulletCir--
+    if (bulletCir < 0) {
+        bulletCir = 2
+    }
     circleSelec[bulletCir].classList.add('select')
 
     items[cardCorrente].scrollIntoView({
-        behavior: "smooth",
-        inline: "center"
-      });
+        inline: "center",
+        block: "center",
+    });
 
 })
-
 
 setaRight.addEventListener('click', () => {
     cardCorrente += 3;
@@ -143,13 +142,13 @@ setaRight.addEventListener('click', () => {
 
     circleSelec[bulletCir].classList.remove('select')
     bulletCir++;
-    if (bulletCir >= 3) {
+    if (bulletCir > 2) {
         bulletCir = 0;
     }
     circleSelec[bulletCir].classList.add('select')
     
     items[cardCorrente].scrollIntoView({
-        behavior: "smooth",
-        inline: "center"
-      });
+        inline: "center",
+        block: "center"
+    });
 })
