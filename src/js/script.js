@@ -152,3 +152,79 @@ setaRight.addEventListener('click', () => {
         block: "center"
     });
 })
+
+// Criando os cards do segundo carrossel
+const clientCards = document.querySelector('.clientCards')
+const coments = [
+    {
+        userPic: 'cliCard1',
+        userName: 'Kristin Watson',
+        userComent: 'I rented a car for a one-week trip from Carnet on the recommendation of my friend. Actually, I am satisfied with them.'
+    },
+    {
+        userPic: 'cliCard2',
+        userName: 'Robert Fox',
+        userComent: 'During my last trip, I used a Carent sport car . The car was completely clean and had enough gas.'
+    },
+    {
+        userPic: 'cliCard3',
+        userName: 'Sarah Thompson',
+        userComent: 'Carnet provided me with excellent service during my recent rental. The car was in great condition, and the whole process was smooth and efficient.'
+    },
+    {
+        userPic: 'cliCard4',
+        userName: 'Emily Garcia',
+        userComent: 'I booked a family vacation car through Carnet and it was a fantastic experience. The car was spacious, clean, and perfect for our trip. Highly recommend!'
+    },
+    {
+        userPic: 'cliCard5',
+        userName: 'Michael Patel',
+        userComent: 'Carnet made my business trip hassle-free with their reliable car rental service. The car was ready on time, and the return process was quick and easy. Will definitely use them again.'
+    }
+]
+
+coments.forEach(coment => {
+    const cardCli = document.createElement("div")
+    cardCli.classList.add("cardCli")
+
+    cardCli.innerHTML = `<img src="./src/img/${coment.userPic}.svg" alt="Imagem de perfil do usuário">
+    <div class="nameComent">
+        <h2>${coment.userName}</h2>
+        <p>${coment.userComent}</p>
+    </div>`
+    clientCards.appendChild(cardCli)
+});
+
+// Carrossel com os comentários dos clientes
+const setaRightCli = document.getElementById("set-rightCli");
+const setaLeftCli = document.getElementById("set-leftCli");
+const carrosselCli = document.querySelectorAll(".cardCli");
+const tamCli = carrosselCli.length;
+let cardCliCorrente = 0;
+
+setaLeftCli.addEventListener('click', () => {
+    cardCliCorrente -= 1;
+
+    if (cardCliCorrente < 0) {
+        cardCliCorrente = tamCli-2;
+    }
+
+    carrosselCli[cardCliCorrente].scrollIntoView({
+        inline: "start",
+        block: "center",
+    });
+
+})
+
+setaRightCli.addEventListener('click', () => {
+    cardCliCorrente += 1;
+    
+    if (cardCliCorrente >= tamCli-1) {
+        cardCliCorrente = 0;
+    }
+    
+    carrosselCli[cardCliCorrente].scrollIntoView({
+        inline: "start",
+        block: "center"
+    });
+})

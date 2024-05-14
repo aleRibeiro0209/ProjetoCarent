@@ -7,16 +7,7 @@ body {
     align-items: center;
 }
 
-/* Inicio da Main */
-#heroSection {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    height: 100vh;
-    margin-bottom: 56px;
-}
-
-/* Inicio do header da Main */
+/* Inicio do header */
 #headMenu {
     width: 100%;
     height: 40px;
@@ -59,7 +50,16 @@ body {
     height: 40px;
     font-size: 16px;
 }
-/* Fim do header da Main */
+/* Fim do header*/
+
+/* Inicio da Main */
+#heroSection {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    margin-bottom: 56px;
+}
 
 /* Inicio da div socialMenu da Main */
 #socialMenu {
@@ -598,6 +598,7 @@ body {
 }
 /* Fim da section premiumServices */
 
+/* Inicio da section clientSay */
 #clientSay {
     width: 100%;
     display: flex;
@@ -618,26 +619,29 @@ body {
 
 #clientSay .carrossel {
     width: 100%;
-    max-width: 70rem;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; 
 }
 
 #clientSay .carrossel .clientCards {
     max-width: 930px;
     width: 100%;
     display: flex;
+    justify-content: start; 
+    align-items: center;
     gap: 1.5rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
 }
 
 #clientSay .carrossel .clientCards .cardCli {
-    
     max-width: 453px;
-    width: 100%;
     height: 417px;
+    padding: 26.5px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     gap: 1.5rem;
@@ -653,19 +657,16 @@ body {
 }
 
 #clientSay .carrossel .clientCards .cardCli .nameComent {
-    width: 100%;
-    max-width: 400px;
+    width: 25rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1.375rem;
     text-align: center;
+    gap: 1.375rem;
 }
 
 #clientSay .carrossel .clientCards .cardCli .nameComent h2 {
     font-family: "Montserrat", sans-serif;
-    font-size: 1.625rem;
+    font-size: clamp(0.5rem, 1.625rem, 2rem);
     font-weight: 500;
     color: #141414;
 }
@@ -676,6 +677,120 @@ body {
     font-size: 1.25rem;
     color: #575757;
 }
+/* Fim da section clientSay */
+
+/* Inicio da section dadosQuality */
+#dadosQuality {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4rem 10rem;
+    gap: 10rem;
+    min-height: 221px;
+    margin-bottom: 5rem;
+    background-color: #FFE4C6;
+}
+
+#dadosQuality .dataQ {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 13.5rem;
+    height: 100%;
+    max-height: 5.8125rem;
+    text-align: center;
+}
+
+#dadosQuality .dataQ h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: #141414;
+}
+
+#dadosQuality .dataQ p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #575757;
+}
+/* Fim da section dadosQuality */
+
+/* Inicio da section contacts */
+#contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+#contacts .contacTitle h3{
+    color:#141414;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+#contacts .cardFormContac {
+    width: 100%;
+    max-width: 65.9375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5.4375rem;
+    padding: 2.5rem 3.5rem;
+    flex-wrap: wrap-reverse;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.10);
+    border-radius: 0.25rem;
+}
+
+#contacts .cardFormContac .contactForm {
+    width: 25.3125rem;
+    height: 24.375rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+#contacts .cardFormContac .contactForm .inputFormsCont input {
+    width: 100%;
+    height: 3.75rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #C4C4C4;
+    border-radius: 0.25rem;
+    background-color: #FBFBFB;
+    color: #575757;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#contacts .cardFormContac .contactForm .inputFormsCont input:last-child {
+    height: 7.625rem;
+    text-wrap: wrap;
+}
+
+#contacts .cardFormContac .contactForm button{
+    width: 256px;
+    height: 60px;
+    font-size: 1.5rem;
+}
+
+#contacts .cardFormContac .contactForm .inputFormsCont {
+    width: 100%;
+    max-width: 25.3125rem;
+    height: 18.125rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Fim da section contacts */
 
 /* Todos os elementos hr */
 hr {

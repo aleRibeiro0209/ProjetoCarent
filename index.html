@@ -11,21 +11,24 @@
     <link rel="stylesheet" type="text/css" href="./src/fontawesome/css/all.min.css">
 </head>
 <body>
+    <!-- Inicio header headMenu -->
+    <header id="headMenu">
+        <h1 class="logoCare">CARENT</h1>
+        <nav class="menu">
+            <div class="menuItems">
+                <a href="#heroSection">Home</a>
+                <a href="#aboutUs">About</a>
+                <a href="#bookNow">Booking</a>
+                <a href="#clientSay">Cars</a>
+                <a href="#contacts">Contacts</a>
+            </div>
+            <button class="menuButton btnStyle">Login | Sign up</button>
+        </nav>
+    </header>
+    <!-- Fim header headMenu -->
+
     <!-- Inicio main Hero Section -->
     <main id="heroSection">
-        <header id="headMenu">
-            <h1 class="logoCare">CARENT</h1>
-            <nav class="menu">
-                <div class="menuItems">
-                    <a href="#heroSection">Home</a>
-                    <a href="#aboutUs">About</a>
-                    <a href="#bookNow">Booking</a>
-                    <a href="#cars">Cars</a>
-                    <a href="">Contacts</a>
-                </div>
-                <button class="menuButton btnStyle">Login | Sign up</button>
-            </nav>
-        </header>
             <div id="socialMenu">
                 <span class="line"></span>
                 <div class="redesIcons">
@@ -203,27 +206,58 @@
             <hr>
         </div>
         <div class="carrossel">
-            <img src="./src/img/arrow-left.svg" alt="">
+            <img id="set-leftCli" src="./src/img/arrow-left.svg" alt="">
             <div class="clientCards">
-                <div class="cardCli">
-                    <img src="./src/img/cliCard1.svg" alt="Imagem de perfil do usuário">
-                    <div class="nameComent">
-                        <h2>Kristin Watson</h2>
-                        <p>I rented a car for a one-week trip from Carnet on the recommendation of my friend. Actually, I am satisfied with them.</p>
-                    </div>
-                </div>
-                <div class="cardCli">
-                    <img src="./src/img/cliCard2.svg" alt="Imagem de perfil do usuário">
-                    <div class="nameComent">
-                        <h2>Robert Fox</h2>
-                        <p>During my last trip, I used a Carent sport car . The car was completely clean and had enough gas.</p>
-                    </div></div>
+                <!-- Adicionando divs no carrossel dinamicamente com JS -->
             </div>
-            <img src="./src/img/arrow-right.svg" alt="">
+            <img id="set-rightCli" src="./src/img/arrow-right.svg" alt="">
         </div>
     </section>
     <!-- Fim da section clientSay -->
 
+    <!-- Inicio da section dadosQuality  -->
+    <section id="dadosQuality">
+        <div class="dataQ">
+            <h1>450+</h1>
+            <p>Cars For Rent</p>
+        </div>
+        <div class="dataQ">
+            <h1>800+</h1>
+            <p>Happy Clients</p>
+        </div>
+        <div class="dataQ">
+            <h1>750+</h1>
+            <p>Rental Locations</p>
+        </div>
+    </section>
+    <!-- Fim da section dadosQuality  -->
+
+    <!-- Inicio da section contacts  -->
+    <section id="contacts">
+        <div class="contacTitle">
+            <h3>Contact Us</h3>
+            <hr>
+        </div>
+        <div class="cardFormContac">
+            <form class="contactForm" action="">
+                <div class="inputFormsCont">
+                    <input type="text" placeholder="Your Name*">
+                    <input type="text" placeholder="Your Email*">
+                    <input type="text" placeholder="Your Message">
+                </div>
+                
+                <button class="btnStyle">Send A Message</button>
+            </form>
+            <img src="./src/img/contactPicture.svg" alt="Consultor entregando chave ao cliente">
+        </div>
+    </section>
+    <!-- Fim da section contacts  -->
+
+    <!-- Inicio do preFooter -->
+    <footer id="preFooter">
+        
+    </footer>
+    <!-- Fim do preFooter -->
 
     <script src="./src/js/script.js"></script>
     <script src="./src/js/main.js"></script>
