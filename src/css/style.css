@@ -10,23 +10,22 @@ body {
 /* Inicio do header */
 #headMenu {
     width: 100%;
-    height: 40px;
-    margin-top: 20px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 32px 100px;
 }
 
 #headMenu .logoCare {
     font-family: Arial Black, sans-serif;
     font-size: 26px;
     color: #FE8400;
-    margin-left: 155px;
+    margin-left: 90px;
 }
 
 #headMenu .menu {
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
     display: flex;
     justify-content: space-around;
 }
@@ -56,7 +55,8 @@ body {
 #heroSection {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
     margin-bottom: 56px;
 }
 
@@ -67,9 +67,9 @@ body {
     justify-content: center;
     align-items: center;
     gap: 12px;
-    height: 445px;
-    margin: 72px;
-    margin-left: calc(72px + 47.5px);
+    width: 20%;
+    max-width: 200px;
+    max-height: 445px;
 }
 
 #socialMenu .line {
@@ -110,12 +110,9 @@ body {
 #headerText {
     width: 528px;
     height: 445px;
-    margin-left: 47.5px;
-    margin-top: 72px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: flex-start;
     gap: 48px;
     background-color: rgba(0, 0, 0, 0.15);
     z-index: 999;
@@ -152,22 +149,16 @@ body {
 
 /* Inicio da img mainPicture da Main */
 #heroSection #mainPicture {
-    width: 909px;
-    position: absolute;
-    top: 104px;
-    right: 0px;
+    width: 60%;
 }
 /* Fim da img mainPicture da Main*/
 
 /* Inicio da span com a classe rectangle da Main */
-#heroSection .rectangle {
+#heroSection .rectangle, #headMenu .rectangle  {
     position: absolute;
-    top: 0;
-    left: 0;
     background-color: #141414;
-    width: 60%;
-    max-width: 700px;
-    height: 100vh;
+    width: 55%;
+    height: calc(100% - 1px);
     z-index: -1;
 }
 /* Fim da span com a classe rectangle da Main */
@@ -394,11 +385,11 @@ body {
 }
 
 #cars .carasoulList .List .cardsCars {
-    width: 75%;
+    width: 80%;
     min-width: 357px;
     max-width: 86.25rem;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     gap: 24px;
     overflow-x: auto;
@@ -781,7 +772,8 @@ body {
 }
 
 #contacts .cardFormContac .contactForm .inputFormsCont textarea{
-    width: 25.3125rem;
+    width: 100%;
+    max-width: 25.3125rem;
     height: 7.625rem;
     padding: 0.5rem 1rem;
     border: 1px solid #C4C4C4;
