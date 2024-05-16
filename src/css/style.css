@@ -5,6 +5,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    scroll-behavior: smooth;
 }
 
 /* Inicio do header */
@@ -54,6 +55,7 @@ body {
 /* Inicio da Main */
 #heroSection {
     width: 100%;
+    height: calc(100vh - 5rem);
     display: flex;
     justify-content: start;
     align-items: center;
@@ -150,6 +152,9 @@ body {
 /* Inicio da img mainPicture da Main */
 #heroSection #mainPicture {
     width: 60%;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
 }
 /* Fim da img mainPicture da Main*/
 
@@ -157,8 +162,8 @@ body {
 #heroSection .rectangle, #headMenu .rectangle  {
     position: absolute;
     background-color: #141414;
-    width: 55%;
-    height: calc(100% - 1px);
+    width: 50%;
+    height: 100%;
     z-index: -1;
 }
 /* Fim da span com a classe rectangle da Main */
@@ -385,11 +390,11 @@ body {
 }
 
 #cars .carasoulList .List .cardsCars {
-    width: 80%;
-    min-width: 357px;
+    width: 75%;
+    min-width: 380px;
     max-width: 86.25rem;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 24px;
     overflow-x: auto;
