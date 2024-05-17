@@ -1,7 +1,7 @@
 /* Arquivo de respondividade */
 @media (max-width: 999px) {
-    body {
-        overflow-x: hidden;
+    html, body {
+        overflow-x: hidden !important;
     }
 
     /* Logo */
