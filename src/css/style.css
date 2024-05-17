@@ -5,57 +5,99 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    scroll-behavior: smooth;
 }
 
 /* Inicio do header */
 #headMenu {
     width: 100%;
-    height: 80px;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 #headMenu .logoCare {
-    font-family: Arial Black, sans-serif;
-    font-size: 26px;
-    color: #FE8400;
     margin-left: 90px;
+    font-family: Arial Black, sans-serif;
+    font-size: 1.625rem;
+    color: #FE8400;
 }
 
 #headMenu .menu {
-    width: 100%;
-    max-width: 700px;
+    width: 50%;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-around;
 }
 
 #headMenu .menu .menuItems {
-    width: 497px;
     display: flex;
-    justify-content: flex-start;
-    gap: 40px;
     align-items: center;
 }
 
-#headMenu .menu .menuItems a {
+#headMenu .menu .mobile-menu {
+    cursor: pointer;
+    display: none;
+}
+
+#headMenu .menu .mobile-menu div {
+    width: 32px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #141414;
+    margin: 7px;
+    transition: 0.3s;
+}
+
+#headMenu .menu .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+#headMenu .menu .mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+#headMenu .menu .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+#headMenu .menu .menuItems .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+#headMenu .menu .menuItems .nav-list li a {
     color: #141414;
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 #headMenu .menu .menuButton {
     width: 146px;
-    height: 40px;
+    min-height: 40px;
     font-size: 16px;
+}
+
+#headMenu .rectangle {
+    position: absolute;
+    background-color: #141414;
+    left: 0;
+    width: 50%;
+    height: 10vh;
+    z-index: -1;
 }
 /* Fim do header*/
 
 /* Inicio da Main */
 #heroSection {
     width: 100%;
-    height: calc(100vh - 5rem);
+    height: 90vh;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -110,8 +152,8 @@ body {
 
 /* Inicio da div headerText da Main */
 #headerText {
-    width: 528px;
-    height: 445px;
+    width: 98%;
+    max-width: 528px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -130,14 +172,14 @@ body {
 #headerText .title h2 {
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
-    font-size: 48px;
+    font-size: 3rem;
     color: #FFF;
 }
 
 #headerText .title p {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: rgba(255, 255, 255, 0.85);
     line-height: 2.5rem;
 }
@@ -145,7 +187,8 @@ body {
 #headerText .exploreButton {
     width: 256px;
     height: 60px;
-    font-size: 24px;
+    font-size: 1.5rem;
+    margin-bottom: 4px;
 }
 /* Fim da div headerText da Main */
 
@@ -159,11 +202,12 @@ body {
 /* Fim da img mainPicture da Main*/
 
 /* Inicio da span com a classe rectangle da Main */
-#heroSection .rectangle, #headMenu .rectangle  {
+#heroSection .rectangle {
     position: absolute;
     background-color: #141414;
+    left: 0;
     width: 50%;
-    height: 100%;
+    height: 90vh;
     z-index: -1;
 }
 /* Fim da span com a classe rectangle da Main */
@@ -600,6 +644,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 2.5rem;
     margin-bottom: 5rem;
 }
@@ -899,4 +944,5 @@ hr {
     font-weight: 400;
     color: #141414;
     border-radius: 4px;
+    cursor: pointer;
 }

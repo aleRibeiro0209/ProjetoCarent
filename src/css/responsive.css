@@ -1,0 +1,101 @@
+/* Arquivo de respondividade */
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Logo */
+    #headMenu .logoCare {
+        margin-left: 0;
+        width: 50%;
+        text-align: center;
+    }
+
+    /* Menu Lateral */
+    .nav-list {
+        opacity: 0;
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        width: 50vw;
+        height: 90vh;
+        background: #FE8400;
+        border-radius: 2rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 1000;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    #headMenu .menu .menuItems .nav-list li {
+        align-items: center;
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    #headMenu .menu {
+        flex-direction: row;
+        justify-content: end;
+    }
+
+    #headMenu .menu .mobile-menu {
+        display: block;
+    }
+
+    /* Main */
+    #heroSection {
+        justify-content: center;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    /* Menu de redes sociais do main */
+    #socialMenu {
+       display: none;
+    }
+
+    /* img mainPicture da Main */
+    #heroSection #mainPicture {
+        position: static;
+        width: 98%;
+        max-width: 528px;
+    }
+
+    /* section bookNow */
+    #bookNow .bookingForm .formBook .space {
+        justify-content: center;
+    }
+    #bookNow .bookingForm .formBook .inputStyleSmall, .Peq {
+        width: 320px;
+    }
+
+    /* section cars */
+    #cars .carasoulList .List .cardsCars {
+        width: 98%;
+    }
+
+    .set-carList, #cars .carasoulList .bullet {
+        display: none;
+    }
+
+    /* section clientSay */
+    #clientSay .carrossel .set-cliList {
+        display: none;
+    }
+
+    #clientSay .carrossel .clientCards .cardCli {
+       margin-left: 0.5rem;
+    }
+
+    #clientSay .carrossel .clientCards .cardCli .nameComent {
+        width: 18rem;
+    }
+
+    /* footer */
+    #preFooter .logoIcon{
+        justify-content: center;
+    }
+
+}

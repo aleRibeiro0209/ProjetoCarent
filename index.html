@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="stylesheet" href="./src/css/animate.css">
     <link rel="stylesheet" href="./src/css/importFont.css">
     <link rel="stylesheet" type="text/css" href="./src/fontawesome/css/all.min.css">
 </head>
@@ -16,14 +17,21 @@
     <header id="headMenu">
         <h1 class="logoCare">CARENT</h1>
         <nav class="menu">
-            <div class="menuItems">
-                <a href="#heroSection">Home</a>
-                <a href="#aboutUs">About</a>
-                <a href="#bookNow">Booking</a>
-                <a href="#cars">Cars</a>
-                <a href="#contacts">Contacts</a>
-            </div>
             <button class="menuButton btnStyle">Login | Sign up</button>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="menuItems">
+                <ul class="nav-list">
+                    <li><a href="#heroSection">Home</a></li>
+                    <li><a href="#aboutUs">About</a></li>
+                    <li><a href="#bookNow">Booking</a></li>
+                    <li><a href="#cars">Cars</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </div>
         </nav>
         <span class="rectangle"></span>
     </header>
@@ -208,11 +216,11 @@
             <hr>
         </div>
         <div class="carrossel">
-            <img id="set-leftCli" src="./src/img/arrow-left.svg" alt="">
+            <img class="set-cliList" id="set-leftCli" src="./src/img/arrow-left.svg" alt="">
             <div class="clientCards">
                 <!-- Adicionando divs no carrossel dinamicamente com JS -->
             </div>
-            <img id="set-rightCli" src="./src/img/arrow-right.svg" alt="">
+            <img class="set-cliList" id="set-rightCli" src="./src/img/arrow-right.svg" alt="">
         </div>
     </section>
     <!-- Fim da section clientSay -->
@@ -274,5 +282,6 @@
     <!-- Fim do preFooter -->
     <script src="./src/js/script.js"></script>
     <script src="./src/js/main.js"></script>
+    <script src="./src/js/mobileMenu.js"></script>
 </body>
 </html>
