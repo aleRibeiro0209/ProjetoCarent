@@ -17,10 +17,10 @@
         position: absolute;
         top: 10vh;
         right: 0;
-        width: 50vw;
-        height: 90vh;
+        width: 30vw;
+        height: 50vh;
         background: #FE8400;
-        border-radius: 2rem;
+        border-radius: 1rem;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -30,9 +30,11 @@
     }
 
     #headMenu .menu .menuItems .nav-list li {
-        align-items: center;
-        margin-left: 0;
         opacity: 0;
+    }
+
+    #headMenu .menu .menuItems .nav-list li a { 
+        margin-left: 0;
     }
 
     #headMenu .menu {
@@ -66,6 +68,7 @@
     /* section bookNow */
     #bookNow .bookingForm .formBook .space {
         justify-content: center;
+        gap: 2rem;
     }
     #bookNow .bookingForm .formBook .inputStyleSmall, .Peq {
         width: 320px;
@@ -73,7 +76,8 @@
 
     /* section cars */
     #cars .carasoulList .List .cardsCars {
-        width: 98%;
+        overflow-x: scroll;
+        scrollbar-width:auto;
     }
 
     .set-carList, #cars .carasoulList .bullet {
@@ -85,8 +89,10 @@
         display: none;
     }
 
-    #clientSay .carrossel .clientCards .cardCli {
-       margin-left: 0.5rem;
+    #clientSay .carrossel .clientCards {
+        width: 88%;
+        overflow-x: scroll;
+        scrollbar-width: auto;
     }
 
     #clientSay .carrossel .clientCards .cardCli .nameComent {

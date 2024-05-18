@@ -65,7 +65,6 @@ body {
 #headMenu .menu .menuItems .nav-list {
     list-style: none;
     display: flex;
-    gap: 2rem;
 }
 
 .nav-list.active {
@@ -73,6 +72,7 @@ body {
 }
 
 #headMenu .menu .menuItems .nav-list li a {
+    margin-left: 2rem;
     color: #141414;
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
@@ -358,6 +358,10 @@ body {
 
 
 #bookNow .bookingForm .formBook .inputStyleBig input, #bookNow .bookingForm .formBook .inputStyleSmall input {
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    color: #141414;
     width: 100%;
     height: 100%;
     border-radius: 4px;
@@ -373,6 +377,10 @@ body {
     font-weight: 400;
     color: #141414;
     height: 60px;
+}
+
+input:focus + .sobPosition {
+    display: none;
 }
 
 .sobPosition {
@@ -439,7 +447,7 @@ body {
 
 #cars .carasoulList .List .cardsCars {
     width: 75%;
-    min-width: 380px;
+    min-width: 357px;
     max-width: 86.25rem;
     display: flex;
     justify-content: start;
@@ -651,6 +659,14 @@ body {
     text-align: center;
     gap: 2.5rem;
     margin-bottom: 5rem;
+}
+
+#clientSay .cliSayTitle {
+    width: 80%;
+    max-width: 366px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 #clientSay .cliSayTitle h3{
