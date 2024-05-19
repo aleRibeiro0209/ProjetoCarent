@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" type="text/css" href="./src/fontawesome/css/all.min.css">
+</head>
+<body>
+    <button onclick="openModal()">TESTE</button>
+    <div id="overlay" class="overlay" onclick="closeModal()">
+        <div class="modal" id="modal">
+            <span onclick="closeModal()" class="icon-Close"><i class="fa-solid fa-xmark"></i></span>
+            <div class="modal-title">
+                <h2>Mercedes-AMG GT</h2>
+                <h3>Descrição resumida:</h3>
+            </div>
+            <p>O Mercedes-AMG GT é um carro esportivo de alto desempenho da Mercedes-Benz, caracterizado por seu motor dianteiro V8 biturbo, tração traseira e uma construção elegante e aerodinâmica. Ele oferece uma combinação de potência impressionante, manuseio ágil e design sofisticado. O GT C Roadster, uma versão conversível, adiciona a emoção de dirigir ao ar livre, mantendo a performance excepcional e o luxo que a linha AMG representa.</p>
+        </div>
+    </div>
+    <script src="./src/js/main.js"></script>
+</body>
+</html>

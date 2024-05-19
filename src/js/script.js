@@ -1,73 +1,84 @@
 // Criação dos cards
 const cardsCar = document.querySelector('.cardsCars')
+const body = document.querySelector('body')
 const cars = [
     {
-        name: "Jepp Renegate",
-        quantPassa: "5",
+        name: "Mercedes-AMG GT",
+        quantPassa: "2",
         tipoCombus: "Gasolina",
-        modelo: "SUV",
-        valor: 350
+        modelo: "Coupe",
+        valor: 1920,
+        descricao: "O Mercedes-AMG GT é um carro esportivo de alto desempenho da Mercedes-Benz, caracterizado por seu motor dianteiro V8 biturbo, tração traseira e uma construção elegante e aerodinâmica. Ele oferece uma combinação de potência impressionante, manuseio ágil e design sofisticado. O GT C Roadster, uma versão conversível, adiciona a emoção de dirigir ao ar livre, mantendo a performance excepcional e o luxo que a linha AMG representa."
     },
     {
-        name: "McLaren P1",
+        name: "McLaren 720S",
         quantPassa: "2",
-        tipoCombus: "Hibrido",
+        tipoCombus: "Gasolina",
         modelo: "Esportivo",
-        valor: 780
+        valor: 2690,
+        descricao: "O McLaren 720S é um carro esportivo de alta performance com capacidade para 2 passageiros. Alimentado por gasolina, é conhecido por seu design aerodinâmico e motor potente. Preço aproximado: 2690 (unidade de valor não especificada)."
     },
     {
         name: "MINI Countryman",
         quantPassa: "5",
         tipoCombus: "Elétrico",
         modelo: "SUV",
-        valor: 210
+        valor: 210,
+        descricao: "O MINI Countryman é um SUV elétrico que acomoda até 5 passageiros. Combina o charme clássico do MINI com tecnologia moderna e eficiência elétrica. Preço aproximado: 210 (unidade de valor não especificada)."
     },
     {
         name: "Porsche 918 Spyder",
         quantPassa: "2",
         tipoCombus: "Gasolina",
-        modelo: "Coupé",
-        valor: 2350
+        modelo: "Coupe",
+        valor: 2350,
+        descricao: "O Porsche 918 Spyder é um coupe esportivo de luxo para 2 passageiros, movido a gasolina. Destaca-se pelo desempenho excepcional e design inovador. Preço aproximado: 2350 (unidade de valor não especificada)."
     },
     {
         name: "Porsche 911 Turbo S",
         quantPassa: "2",
         tipoCombus: "Gasolina",
-        modelo: "Coupé",
-        valor: 1200
+        modelo: "Coupe",
+        valor: 1200,
+        descricao: "O Porsche 911 Turbo S é um icônico coupe esportivo a gasolina com espaço para 2 passageiros. Conhecido por sua velocidade e precisão de manuseio. Preço aproximado: 1200 (unidade de valor não especificada)."
     },
     {
         name: "Aston Martin Vantage",
         quantPassa: "2",
         tipoCombus: "Gasolina",
-        modelo: "Coupé",
-        valor: 1990
+        modelo: "Coupe",
+        valor: 1990,
+        descricao: "O Aston Martin Vantage é um elegante coupe esportivo a gasolina para 2 passageiros. Combina luxo britânico com desempenho robusto. Preço aproximado: 1990 (unidade de valor não especificada)."
     },
     {
         name: "Porsche Taycan Turbo S",
         quantPassa: "4",
         tipoCombus: "Elétrico",
         modelo: "Sedan",
-        valor: 1100
+        valor: 1100,
+        descricao: "O Porsche Taycan Turbo S é um sedan elétrico de alta performance que acomoda 4 passageiros. Reconhecido por sua aceleração rápida e tecnologia avançada. Preço aproximado: 1100 (unidade de valor não especificada)."
     },
     {
         name: "Lamborghini Urus",
         quantPassa: "5",
         tipoCombus: "Gasolina",
         modelo: "SUV",
-        valor: 1760
+        valor: 1760,
+        descricao: "O Lamborghini Urus é um SUV de luxo a gasolina para 5 passageiros. Oferece uma experiência de condução esportiva em um formato utilitário. Preço aproximado: 1760 (unidade de valor não especificada)."
     },
     {
         name: "Bentley Bentayga Speed",
         quantPassa: "5",
         tipoCombus: "Gasolina",
         modelo: "SUV",
-        valor: 2090
+        valor: 2090,
+        descricao: "O Bentley Bentayga Speed é um SUV a gasolina de alta performance com capacidade para 5 passageiros. Combina conforto, luxo e potência. Preço aproximado: 2090 (unidade de valor não especificada)."
     }
 ];
 
 let i = 1
 cars.forEach(car => {
+    
     const card = document.createElement("div")
     card.classList.add("card")
 
@@ -95,12 +106,37 @@ cars.forEach(car => {
                 <p>Daily rate from</p>
                 <p class="valor">$${car.valor}</p>
             </div>
-            <button class="btnStyle btnPageCar">Book Now</button>
+            <button id="btnCarModal${i}" class="btnStyle btnPageCar">Book Now</button>
         </div>
     </div>`
+
+    // body.appendChild()
     cardsCar.appendChild(card)
+
+    const btnCar = document.querySelector(`#btnCarModal${i}`)
+    btnCar.addEventListener("click", () => {
+        const overlayBody = document.createElement("div")
+            
+        overlayBody.innerHTML = `<div id="overlay${i}" class="overlay">
+        <div class="modal" id="modal">
+            <span class="icon-Close"><i class="fa-solid fa-xmark"></i></span>
+            <div class="modal-title">
+                <h2>${car.name}</h2>
+                <h3>Descrição resumida:</h3>
+            </div>
+                <p>${car.descricao}</p>
+            </div>
+        </div>`
+    
+        body.appendChild(overlayBody)
+        const overlayModal = document.getElementById(`overlay${i}`);
+        overlayModal.classList.add("show-modal");
+        // overlayBody.addEventListener("click", () => {
+        //     overlayModal.classList.remove("show-modal");
+        // })        
+    })
     i++
-});
+})
 
 // Carrossel
 const setaRight = document.getElementById("set-right");
