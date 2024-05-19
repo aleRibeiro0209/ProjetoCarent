@@ -76,6 +76,7 @@ const cars = [
     }
 ];
 
+let test = [];
 let i = 1
 cars.forEach(car => {
     
@@ -106,35 +107,26 @@ cars.forEach(car => {
                 <p>Daily rate from</p>
                 <p class="valor">$${car.valor}</p>
             </div>
-            <button id="btnCarModal${i}" class="btnStyle btnPageCar">Book Now</button>
+            <button onclick="openModal(overlay${i})" id="btnCarModal${i}" class="btnStyle btnPageCar">Book Now</button>
         </div>
     </div>`
 
     // body.appendChild()
     cardsCar.appendChild(card)
+    const overlayBody = document.createElement("div")
+        
+    overlayBody.innerHTML = `<div id="overlay${i}" class="overlay" onclick="closeModal(overlay${i})">
+    <div class="modal" id="modal${i}">
+        <span onclick="closeModal(overlay${i})" class="icon-Close"><i class="fa-solid fa-xmark"></i></span>
+        <div class="modal-title">
+            <h2>${car.name}</h2>
+            <h3>Descrição resumida:</h3>
+        </div>
+            <p>${car.descricao}</p>
+        </div>
+    </div>`
 
-    const btnCar = document.querySelector(`#btnCarModal${i}`)
-    btnCar.addEventListener("click", () => {
-        const overlayBody = document.createElement("div")
-            
-        overlayBody.innerHTML = `<div id="overlay${i}" class="overlay">
-        <div class="modal" id="modal">
-            <span class="icon-Close"><i class="fa-solid fa-xmark"></i></span>
-            <div class="modal-title">
-                <h2>${car.name}</h2>
-                <h3>Descrição resumida:</h3>
-            </div>
-                <p>${car.descricao}</p>
-            </div>
-        </div>`
-    
-        body.appendChild(overlayBody)
-        const overlayModal = document.getElementById(`overlay${i}`);
-        overlayModal.classList.add("show-modal");
-        // overlayBody.addEventListener("click", () => {
-        //     overlayModal.classList.remove("show-modal");
-        // })       
-    })
+    body.appendChild(overlayBody)
     i++
 })
 

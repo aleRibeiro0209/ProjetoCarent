@@ -16,3 +16,12 @@ function readMore(){
         alterImageAlign.style.alignItems = "start";
     }
 }
+
+// Funções de exibicao do pop up (modal)
+function openModal(overlay) {
+    overlay.classList.add("show-modal");
+}
+
+function closeModal(overlay) {
+    overlay.classList.remove("show-modal");
+}
