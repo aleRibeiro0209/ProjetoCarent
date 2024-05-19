@@ -133,7 +133,7 @@ cars.forEach(car => {
         overlayModal.classList.add("show-modal");
         // overlayBody.addEventListener("click", () => {
         //     overlayModal.classList.remove("show-modal");
-        // })        
+        // })       
     })
     i++
 })
