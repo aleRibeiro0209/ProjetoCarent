@@ -5,6 +5,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    outline: none;
+    scroll-behavior: smooth;
 }
 
 /* Inicio do header */
@@ -174,7 +176,7 @@ body {
     flex-direction: column;
     gap: 48px;
     background-color: rgba(0, 0, 0, 0.15);
-    z-index: 999;
+    z-index: 10;
 }
 
 #headerText .title {
@@ -969,6 +971,7 @@ hr {
 
 /* Estilição do pop up(modal) */
 .overlay {
+    z-index: 999;
     display: flex;
     position: fixed;
     padding: 0;
@@ -1002,7 +1005,7 @@ hr {
     color: #141414;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    z-index: 99;
+    z-index: 999;
 }
 
 .modal .modal-title {

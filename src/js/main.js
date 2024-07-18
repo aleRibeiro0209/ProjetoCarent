@@ -19,6 +19,7 @@ function readMore(){
 
 // Funções de exibicao do pop up (modal)
 function openModal(overlay) {
+    console.log(overlay);
     overlay.classList.add("show-modal");
 }
 
