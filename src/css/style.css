@@ -443,6 +443,7 @@ input:focus + .sobPosition {
 
 #cars .carasoulList .List .set-carList {
     z-index: 999;
+    cursor: pointer;
 }
 
 #cars .carasoulList .List .cardsCars {
