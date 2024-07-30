@@ -455,7 +455,6 @@ input:focus + .sobPosition {
     gap: 24px;
     overflow-x: auto;
     scrollbar-width: none;
-    scroll-behavior: smooth;
 }
 
 #cars .carasoulList .List .cardsCars .card {

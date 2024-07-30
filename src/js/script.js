@@ -157,6 +157,7 @@ setaLeft.addEventListener('click', () => {
     items[cardCorrente].scrollIntoView({
         inline: "center",
         block: "center",
+        behavior: "smooth",
     });
 
 })
@@ -177,7 +178,8 @@ setaRight.addEventListener('click', () => {
     
     items[cardCorrente].scrollIntoView({
         inline: "center",
-        block: "center"
+        block: "center",
+        behavior: "smooth",
     });
 })
 
